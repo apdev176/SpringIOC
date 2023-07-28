@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="myPen" class="com.jsp.scope.Pen" scope="singleton"></bean><!-- by default scope is singleton if not even mentioned -->
+    <bean id="myCar" class="com.jsp.scope.Car" scope="prototype"></bean><!-- it will create new bean object whenever you call getBean method -->
+
+</beans>
